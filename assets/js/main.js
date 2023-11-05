@@ -163,3 +163,25 @@ $(".testimonial-carousel").owlCarousel({
   items: 1
 });
 
+
+  // ========================================================================= //
+  //  //ACTION CLICK MY LABS
+  // ========================================================================= //
+  $(document).ready(function(){
+    $('.tabcontent').hide();
+    $('.tabcontent:first-child').fadeIn();
+    $('.tab-excercise button').click(function(){
+        // active navbar-nar
+        $('.tab-excercise button').removeClass('active');
+        $(this).addClass('active');
+
+        //show tab-content item
+        let id_tab_content = $(this).children('a').attr('href');
+        if (!$(id_tab_content).is(':visible')) { // Check if the tab is not already visible
+            $('.tabcontent').hide();
+            $(id_tab_content).fadeIn();
+        }
+       
+    });
+});
+
