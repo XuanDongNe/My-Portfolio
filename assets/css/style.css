@@ -1634,5 +1634,29 @@ color: #212529;
 }
 
 .panel-header {
-    margin: 0px 300px;
+    margin: 0px 350px;
 }
+.panel-holder {
+    border: 1px solid #000000;
+}
+.panel-holder input {
+    margin: 5px 5px;
+    padding: 5px;
+}
+.panel-button .btn {
+   margin: 10px;
+    border-radius: 5px;
+    background-color: #12af12;
+    border:1px solid #12af12;
+}
+
+
+.panel-button .btn-primary:hover {
+cursor: pointer;
+background-color:#12d412;
+border:1px solid #12d412;
+color: black;
+}
+
+
+
