@@ -1398,26 +1398,31 @@ p {
 .tab-excercise button {
     background-color: inherit;
     float: center;
-    border: 1px solid #00bfff;
-    outline: 1px solid #000000;
+    border: 0.1px solid #00bfff;
+    outline: 0.1px solid #000000;
     cursor: pointer;
     padding: 10px 12px;
     transition: 0.3s;
     font-size: 17px;
     border-radius: 50px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
     margin-right: 10px;
 }
 
 .tab-excercise button:hover {
     background: #00bfff;
     cursor: pointer;
+}
 
+.tab-excercise button:hover a {
+    color: #000000;
 }
 
 .tab-excercise button a {
     text-decoration: none;
+    color: #00bfff;
+    font-weight: bold;
 }
 
 .tabcontent {
@@ -1447,35 +1452,44 @@ p {
     margin: 0px 200px 0px 200px;
 }
 
-.row1 > div {
-    flex-basis: calc(33.33% - 30px); /* Đặt chiều rộng của mỗi cột, ví dụ 33.33% cho 3 cột */
-    margin: 0 15px; /* Thêm khoảng cách trái và phải, và không có khoảng cách ở trên và dưới */
+.row1>div {
+    flex-basis: calc(33.33% - 30px);
+    /* Đặt chiều rộng của mỗi cột, ví dụ 33.33% cho 3 cột */
+    margin: 0 15px;
+    /* Thêm khoảng cách trái và phải, và không có khoảng cách ở trên và dưới */
 }
 
 .shadow-sm {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
+
 .d-flex {
     display: flex !important;
 }
+
 .rounded {
     border-radius: 5px !important;
 }
+
 .border-top {
     border-top: 1px solid #dee2e6 !important;
 }
+
 .bg-light {
     background-color: #f8f9fa !important;
 }
-.pl-4 h4{
+
+.pl-4 h4 {
     margin-bottom: 20px;
 }
+
 .line2 {
     display: block;
     width: auto;
     height: 1.5px;
     background-color: #F85C70;
 }
+
 .row2 {
     display: flex;
     flex-wrap: wrap;
@@ -1483,10 +1497,142 @@ p {
     margin-right: -15px;
 }
 
-.row2 > div {
-    flex-basis: calc(50% -30px);  
-    margin: 0 15px; /* Thêm khoảng cách trái và phải cho cột */
+.row2>div {
+    flex-basis: calc(50% -30px);
+    margin: 0 15px;
+    /* Thêm khoảng cách trái và phải cho cột */
 
 }
 
+.btn-secondary {
+    background-color: #F85C70;
+    border-color: #F85C70;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
 
+.btn.btn-secondary:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #f63750;
+    border-color: #f62b45;
+    border: solid #f62b45;
+
+}
+
+.m-0 a {
+    text-decoration: none;
+    padding: 8px 15px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+.m-0 img {
+    image-rendering: pixelated;
+}
+
+.container-content {
+    width: 100%;
+    padding-right: 200px;
+    padding-left: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*  */
+
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #666666;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.table-bordered thead th, .table-bordered thead td {
+    border-bottom-width: 2px;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+}
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+user agent stylesheet
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+.btn-warning{
+    background-color: #DCE024;
+    border: 1px solid #DCE024;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.btn-warning:hover{
+   color: #212529;
+    background-color: #e0a800;
+    border-color: #d39e00;
+    cursor: pointer;
+}
+
+.btn-danger{
+    background-color: #F62C38;
+    border: 1px solid #F62C38;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.btn-danger:hover {
+background-color: #f63750;
+    border-color: #f62b45;
+    border: 1px solid #f62b45;
+cursor: pointer;
+color: #212529;
+}
+
+.panel-header {
+    margin: 0px 300px;
+}
