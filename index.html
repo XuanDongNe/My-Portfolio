@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-
-
-
     <link rel="stylesheet" href="assets/ionicons/css/ionicons.min.css">
     <title>Võ Xuân Đông</title>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -72,7 +69,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a href="lab1.html" class="nav-link">My Lab</a>
@@ -338,20 +335,16 @@
         <div class="container2">
             <div class="row">
                 <div class="col-md-12">
-
                     <div class="portfolio-list">
-
                         <ul class="nav list-unstyled" id="portfolio-flters">
                             <li class="filter filter-active" data-filter=".all">all</li>
                             <li class="filter" data-filter=".branding">branding</li>
                             <li class="filter" data-filter=".webdesign">web design</li>
                             <li class="filter" data-filter=".photography">photography</li>
                         </ul>
-
                     </div>
 
                     <div class="portfolio-container2">
-
                         <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
                             <a class="popup-img" href="./assets/ịmages/portfolio/1.jpg">
                                 <img src="./assets/ịmages/portfolio/1.jpg" alt="img">
@@ -392,7 +385,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <!-- End section portfolio -->
 
@@ -409,12 +401,12 @@
             </ul>
 
             <div class="tab-excercise">
-                <button class="tab-links active"><a href="#Lab1">Requirement</a></button>
-                <button class="tab-links"><a href="#Lab2">Design</a></button>
-                <button class="tab-links"><a href="#Lab3">Implement</a></button>
+                <button class="tab-links active"><a href="#Text-content" data-id="#Lab1">Requirement</a></button>
+                <button class="tab-links"><a href="#Text-content" data-id="#Lab2">Design</a></button>
+                <button class="tab-links"><a href="#Text-content" data-id="#Lab3">Implement</a></button>
             </div>
             <!-- tab-content -->
-            <div class="text-content">
+            <div class="text-content" id="Text-content">
                 <div id="Lab1" class="tabcontent" style="display: block;">
                     <div class="container-fluid pt-5">
                         <div class="container-tab pb-3">
@@ -515,13 +507,13 @@
                         <div class="panel panel-primary">
                             <div class="panel-header">
                                 <div class="panel-content">
-                                    <h4 style="margin-bottom: 7px;" >Quản lí xe buýt</h4>
+                                    <h4 style="margin-bottom: 7px;">Quản lí xe buýt</h4>
                                     <div class="panel-holder">
-                                        <input type="text"  placeholder="Mã xe buýt" style="margin-top: 10px;">
-                                        <input type="text"  placeholder="Tên xe buýt" style="margin-top: 10px;"><br>
+                                        <input type="text" placeholder="Mã xe buýt" style="margin-top: 10px;">
+                                        <input type="text" placeholder="Tên xe buýt" style="margin-top: 10px;"><br>
                                         <input type="text" placeholder="Điểm đến">
-                                        <input type="text"  placeholder="Điểm đi" ><br>
-                                        <input type="text"  placeholder="Tên doanh nghiệp" style="width:366px"><br>
+                                        <input type="text" placeholder="Điểm đi"><br>
+                                        <input type="text" placeholder="Tên doanh nghiệp" style="width:366px"><br>
                                         <!-- <select name="" id="" >
                                             <option value="">Hoạt động</option>
                                             <option value="">Không hoạt động</option>
@@ -530,8 +522,8 @@
                                             <button class="btn btn-primary">Thêm</button>
                                             <button class="btn btn-primary">Tìm kiếm</button>
                                         </div>
-                                        
-                                        
+
+
                                     </div>
                                 </div>
 
@@ -595,9 +587,6 @@
 
 </body>
 
-
-
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="assets/lib/jquery/jquery.min.js"></script>
 <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
@@ -606,6 +595,7 @@
 <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="assets/lib/magnific-popup/magnific-popup.min.js"></script>
 <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
+<Script src="assets/lib/bootstrap/css/bootstrap.affix.js"></Script>
 
 <!-- Contact Form JavaScript File -->
 <script src="contactform/contactform.js"></script>

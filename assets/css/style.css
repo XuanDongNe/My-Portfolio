@@ -2,6 +2,7 @@ body {
     max-width: 1520px;
     margin: 0 auto;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 .header {
@@ -1396,7 +1397,6 @@ p {
 }
 
 .tab-excercise button {
-    background-color: inherit;
     float: center;
     border: 0.1px solid #00bfff;
     outline: 0.1px solid #000000;
@@ -1421,7 +1421,7 @@ p {
 
 .tab-excercise button a {
     text-decoration: none;
-    color: #00bfff;
+    /* color: #00bfff; */
     font-weight: bold;
 }
 
@@ -1652,10 +1652,17 @@ color: #212529;
 
 
 .panel-button .btn-primary:hover {
-cursor: pointer;
-background-color:#12d412;
-border:1px solid #12d412;
-color: black;
+    cursor: pointer;
+    background-color:#12d412;
+    border:1px solid #12d412;
+    color: black;
+}
+.tab-links.active {
+    background-color: #00bfff;
+}
+
+.tab-links.active a{
+    color: #000;
 }
 
 

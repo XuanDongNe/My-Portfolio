@@ -176,11 +176,12 @@ $(document).ready(function () {
     $(this).addClass('active');
 
     //show tab-content item
-    let id_tab_content = $(this).children('a').attr('href');
+    let id_tab_content = $(this).children('a')[0].dataset.id;
     if (!$(id_tab_content).is(':visible')) { // Check if the tab is not already visible
       $('.tabcontent').hide();
       $(id_tab_content).fadeIn();
     }
+   
     return false;
   });
 });
