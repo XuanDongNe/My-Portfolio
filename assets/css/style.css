@@ -50,9 +50,7 @@ body {
     margin-bottom: 40px;
 }
 
-.navbar {
-    position: sticky;
-}
+
 
 .navbar .brand .brand-txt {
     position: relative;
