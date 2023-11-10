@@ -314,9 +314,10 @@ function initMap() {
 var buyt = [
   { maxb: 'VN-1', tenxb: 'Limouse-32', from: 'HCM', to: 'Hà Nội', tendoanhnghiep: 'Phương Trang', trangthai: 'Dang hoat dong' },
   { maxb: 'VN-2', tenxb: 'Limouse-31', from: 'HCM', to: 'Nha Trang', tendoanhnghiep: 'Phương Trang', trangthai: 'Khong hoat dong' }
+  
 ];
 
-render();
+render(false);
 
 var addBtn = document.querySelector('.btn-add');
 addBtn.addEventListener("click", addItem);
@@ -346,13 +347,17 @@ function addItem() {
 
 
 function render(isRemove) {
+  const buytStore = JSON.parse(sessionStorage.getItem('buyt')) ?? buyt;
+  renderTr(buytStore,isRemove);
+  
+}
+
+function renderTr(buytStore, isRemove) {
   let tableBody = document.querySelector('.table-bordered tbody');
 
   if (isRemove) {
     tableBody.innerHTML = '';
   }
-
-  const buytStore = JSON.parse(sessionStorage.getItem('buyt')) ?? buyt;
 
   buytStore.forEach((item, index) => {
     let row = document.createElement('tr');
@@ -362,18 +367,41 @@ function render(isRemove) {
       <td>${item.from} - ${item.to}</td>
       <td>${item.tendoanhnghiep}</td>
       <td>${item.trangthai}</td>
-      <td><button class="btn btn-warning btn-edit" onclick="editItem(${item.maxb})">Edit</button></td>
-      <td><button class="btn btn-danger btn-delete" onclick="deleteItem(${index})">Delete</button></td>
+      <td><button class="btn btn-warning btn-edit" onclick="editItem('${index}')">Edit</button></td>
+      <td><button class="btn btn-danger btn-delete" onclick="deleteItem('${index}')">Delete</button></td>
     `;
     tableBody.appendChild(row);
   });
 }
 
 // ========================================================================= //
-//  //delete CLICK find
+//  // CLICK find
 // ========================================================================= //
-var findBtn = document.querySelector('btn-find');
+var findBtn = document.querySelector('.btn-find');
 
+findBtn.addEventListener("click", findItems);
+
+function findItems() {
+  const buytStore = JSON.parse(sessionStorage.getItem('buyt')) ?? buyt;
+  let nameOfBusInput = document.getElementById('nameOfBus');
+  const filterData = buytStore.filter(el  => el.tenxb.includes(nameOfBusInput.value))
+  renderTr(filterData, true);
+}
+
+// ========================================================================= //
+//  // CLICK DELETE
+// ========================================================================= //
+// var deleteBtn = document.querySelector('.btn-delete');
+// deleteBtn.addEventListener("click", deleteItem);
+
+function deleteItem(index){
+  const buytStore = JSON.parse(sessionStorage.getItem('buyt')) ?? buyt;
+  const filterData = buytStore.filter((_el, _index)  => _index != index)
+  sessionStorage.removeItem('buyt', JSON.stringify(filterData));
+  sessionStorage.setItem('buyt', JSON.stringify(filterData));
+  
+  renderTr(filterData, true);
+}
 
 
 
