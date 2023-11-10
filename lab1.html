@@ -179,15 +179,15 @@
                             <div class="panel-content">
                                 <h4 style="margin-bottom: 7px;">Quản lí xe buýt</h4>
                                 <div class="panel-holder">
-                                    <input type="text" placeholder="Mã xe buýt" style="margin-top: 10px;">
-                                    <input type="text" placeholder="Tên xe buýt" style="margin-top: 10px;"><br>
-                                    <input type="text" placeholder="Điểm đến">
-                                    <input type="text" placeholder="Điểm đi"><br>
-                                    <input type="text" placeholder="Tên doanh nghiệp" style="width:366px"><br>
-                                    <input type="text" placeholder="Trạng thái" style="width:366px"><br>
+                                    <input id="mabuyt" class="id"  type="text" placeholder="Mã xe buýt" style="margin-top: 10px;">
+                                    <input id="nameOfBus" class="nameOfBus" type="text" placeholder="Tên xe buýt" style="margin-top: 10px;"><br>
+                                    <input id="from" class="from" type="text" placeholder="Điểm đến">
+                                    <input id="to" class="to" type="text" placeholder="Điểm đi"><br>
+                                    <input id="nameOfBusiness" type="text" placeholder="Tên doanh nghiệp" style="width:366px"><br>
+                                    <input id ="trangThai" type="text" placeholder="Trạng thái " style="width:366px"><br>
                                     <div class="panel-button">
-                                        <button class="btn btn-primary">Thêm</button>
-                                        <button class="btn btn-primary">Tìm kiếm</button>
+                                        <button class="btn btn-primary btn-add"  addBtn ="btn-add">Thêm</button>
+                                        <button class="btn btn-primary btn-find">Tìm kiếm</button>
                                     </div>
 
 
@@ -207,15 +207,14 @@
                                         <th>Chuyến đi</th>
                                         <th>Tên doanh nghiệp</th>
                                         <th>Trạng thái</th>
-                                        <th width="60px"></th>
-                                        <th width="60px"></th>
+                                        <th width="60px"></button></th>
+                                        <th width="60px"></button></th>
                                     </tr>
                                 </thead>
+                                <tbody>
+                                </tbody>
                             </table>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>
