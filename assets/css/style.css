@@ -83,6 +83,10 @@ body {
     opacity: 0;
 }
 
+.nav-item a:hover{
+    color: #F85C70;
+}
+
 /*  */
 .navbar .brand .brand-txt h5 {
     font-size: 20px;
