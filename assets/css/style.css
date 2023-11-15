@@ -1522,6 +1522,14 @@ p {
     /* Đổi màu chữ thành trắng khi hover */
 }
 
+.nav-tabs .active{
+    background-color: #17a2b8;
+    border: 1px solid #17a2b8;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
 .nav-tabs li a {
     display: inline-block;
     padding: 0.575rem 1rem;

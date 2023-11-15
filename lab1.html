@@ -63,17 +63,20 @@
     <h2 class="mb-5 labs"><span class="text-danger">My</span> Labs</h2>
     <div class="tab-lab">
         <ul class="nav-tabs">
-            <li><a href="lab1.html">Lab 4</a></li>
-            <li><a href="#">Lab 5</a></li>
-            <li><a href="#">Lab 6</a></li>
+            <li><a href="lab1.html" class="active">Lab 4</a></li>
+            <li><a href="lab2.html">Lab 5</a></li>
+            <li><a href="#">Lab  6</a></li>
             <li><a href="#">Lab 7</a></li>
             <li><a href="#">Lab 8</a></li>
         </ul>
 
         <div class="tab-excercise">
-            <button class="tab-links active"><a href="#Text-content" data-id="#Lab1">Requirement</a></button>
+            <!-- <button class="tab-links active"   ><a href="#Text-content" data-id="#Lab1">Requirement</a></button>
             <button class="tab-links"><a href="#Text-content" data-id="#Lab2">Design</a></button>
-            <button class="tab-links"><a href="#Text-content" data-id="#Lab3">Implement</a></button>
+            <button class="tab-links"><a href="#Text-content" data-id="#Lab3">Implement</a></button> -->
+            <button class="tab-links active" onclick="openLab(event, 'Lab1')" id="defaultOpen">Requirement</button>
+            <button class="tab-links" onclick="openLab(event, 'Lab2')">Design</button>
+            <button class="tab-links" onclick="openLab(event, 'Lab3')">Implement</button>
         </div>
         <!-- tab-content -->
         <div class="text-content" id="Text-content">

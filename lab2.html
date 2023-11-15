@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/lab.css">
+    <link rel="stylesheet" href="assets/ionicons/css/ionicons.min.css">
+    <title>Võ Xuân Đông</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <!-- start nav -->
+    <div div class="contain-nav">
+        <header>
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix"
+                data-offset-top="510">
+                <div class="container">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item "><a href="index.html" class="nav-link ">Home</a>
+                            </li>
+                            <li class="nav-item "><a href="about.html" class="nav-link ">About</a>
+                            </li>
+                            <li class="nav-item"><a href="resume.html" class="nav-link ">Resume</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav brand">
+                            <!-- <img src="assets/ịmages/avatar1.jpg" alt="" class="brand-img"> -->
+                            <li class="brand-txt">
+                                <h5 class="brand-title">Xuan Dong</h5>
+                                <div class="brand-subtitle"> College Student | Photographer</div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="lab1.html" class="nav-link active">My Lab</a>
+                            </li>
+                            <li class="nav-item last-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- end nav -->
+
+    <!-- Start my lab -->
+    <div id="wrapper">
+        <h2 class="mb-5 labs"><span class="text-danger">My</span> Labs</h2>
+        <div class="tab-lab">
+            <ul class="nav-tabs">
+                <li><a href="lab1.html">Lab 4</a></li>
+                <li><a href="lab2.html" class="active">Lab 5</a></li>
+                <li><a href="#">Lab 6</a></li>
+                <li><a href="#">Lab 7</a></li>
+                <li><a href="#">Lab 8</a></li>
+            </ul>
+
+            <div class="tab-excercise">
+                <!-- <button class="tab-links active"   ><a href="#Text-content" data-id="#Lab1">Requirement</a></button>
+            <button class="tab-links"><a href="#Text-content" data-id="#Lab2">Design</a></button>
+            <button class="tab-links"><a href="#Text-content" data-id="#Lab3">Implement</a></button> -->
+                <button class="tab-links active" onclick="openLab(event, 'Requirement')"
+                    id="defaultOpen">Requirement</button>
+                <button class="tab-links" onclick="openLab(event, 'User_scenario')">User scenario</button>
+                <button class="tab-links" onclick="openLab(event, 'Design')">Design</button>
+                <button class="tab-links" onclick="openLab(event, 'Implement')">Implement</button>
+            </div>
+            <!-- tab-content -->
+            <div class="text-content" id="Text-content">
+                <div id="Requirement" class="tabcontent" style="display: block;">
+                    <div class="container-fluid pt-5">
+                        <div class="container-tab pb-3">
+                            <div class="row1">
+                                <div class="col-lg-4 col-md-6 pb-1">
+                                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                                        style="padding: 30px; height: 300px;">
+                                        <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
+                                        <div class="pl-4">
+                                            <h4>Yêu cầu</h4>
+                                            <span class="line2"></span>
+                                            <p class="m-0" style="margin-left: 10px;">
+                                                <b>Yêu cầu:</b> Tạo ra một user scenario. <span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                </span>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pb-1">
+                                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                                        style="padding: 30px; height: 300px">
+                                        <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
+                                        <div class="pl-4">
+                                            <h4>Ví dụ</h4>
+                                            <span class="line2"></span>
+                                            <p class="m-0">
+                                                Chọn 1 bước trong user scenario để thiết kế 1 form giao diện Web trên
+                                                công cụ thiết kế đã chọn. Sau đó tạo ra file html tương ứng cho thiết kế
+                                                này.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pb-1">
+                                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                                        style="padding: 30px; height: 300px">
+                                        <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
+                                        <div class="pl-4">
+                                            <h4>Chú ý</h4>
+                                            <span class="line2"></span>
+                                            <p class="m-0">
+                                                Upload lên host: trong file html có chèn hình ảnh của user scenario ở
+                                                (1) và đường dẫn của file thiết kế ở (2).
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="User_scenario" class="tabcontent" style="display: block;">
+                    <div style="margin-top: 20px;">
+                        <h2 style="opacity: 0.7;">Đông muốn mua hoa nhân dịp ngày đặc biệt.</h2>
+                    </div>
+                    <img src="assets/ịmages/product/User_scenario.png" alt="">
+
+
+                </div>
+
+
+
+                <div id="Design" class="tabcontent" style="display: block;">
+                    <div class="container-fluid pt-5">
+                        <div class="container-tab pb-3">
+                            <div class="row2">
+                                <div class="col-lg-6 pb-1">
+                                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                                        style="width: 500px; height: 625px; margin-left: 220px;">
+                                        <div class="pl-4">
+                                            <h4>Design on Paper</h4>
+                                            <p class="m-0">
+                                                <img src="./assets/ịmages/lab4.jpg" alt=""
+                                                    style="width:450px;height: 500px;margin-bottom: 12px; ">
+                                                <a href="./assets/ịmages/lab4.jpg" download=""
+                                                    class="btn btn-secondary mt-1 py-3 px-5  download-btn"
+                                                    style="margin-bottom: 10px;">Download</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pb-1">
+                                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                                        style="width: 500px; height: 625px;">
+                                        <div class="pl-4">
+                                            <h4>Design on Figma</h4>
+                                            <p class="m-0">
+                                                <img src="./assets/ịmages/lab4_figma.png" alt=""
+                                                    style="width:450px;height:500px; margin-bottom: 12px;">
+                                                <a href="./assets/ịmages/lab4_figma.png" download=""
+                                                    class="btn btn-secondary mt-1 py-3 px-5"
+                                                    style="margin-bottom: 10px; margin-right: 5px;">Download</a>
+                                                <a href="https://www.figma.com/file/y81j187HxT5Qq90H4diZ1p/Vo-Xuan-Dong---22130043?type=design&node-id=0-1&mode=design&t=1hQ10dN4gfn2xnfz-0 "
+                                                    target="_blank" class="btn btn-secondary mt-1 py-3 px-5"
+                                                    style="margin-bottom: 10px;">Figma</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Implement" class="tabcontent" style="display: block;">
+                    <iframe src="product.html" frameborder="0" style=" height: 450px; width: 80%;"></iframe>
+                    <p class="m-0" style="margin: 30px;" >
+                    <a href="product.html" class="btn btn-secondary mt-1 py-3 px-5" style="margin: 50px 0px 10px 0px;padding: 19px 25px;" target="_blank">Review Page</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- End my lab -->
+
+        <!-- Start footer -->
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href="#"><i class="ti-twitter"></i></a>
+                <a href="#"><i class="ti-google"></i></a>
+                <a href="#"><i class="ti-instagram"></i></a>
+                <a href="#"><i class="ti-github"></i></a>
+            </div>
+            <p class="copyright"> © COPYRIGHTS XUAN DONG. ALL RIGHTS RESERVED.</p>
+        </div>
+        <!-- End footer -->
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/lib/jquery/jquery.min.js"></script>
+<script src="assets/lib/jquery/jquery-migrate.min.js"></script>
+<script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/lib/typed/typed.js"></script>
+<script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/lib/magnific-popup/magnific-popup.min.js"></script>
+<script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
+<Script src="assets/lib/bootstrap/css/bootstrap.affix.js"></Script>
+
+<!-- Contact Form JavaScript File -->
+<script src="contactform/contactform.js"></script>
+
+<!-- google map -->
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+
+<script src="assets/js/main.js"></script>
+
+</html>

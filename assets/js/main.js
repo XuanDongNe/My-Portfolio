@@ -167,6 +167,7 @@ $(".testimonial-carousel").owlCarousel({
 // ========================================================================= //
 //  //ACTION CLICK MY LABS
 // ========================================================================= //
+//  Cách 1
 $(document).ready(function () {
   $('.tabcontent').hide();
   $('.tabcontent:first-child').fadeIn();
@@ -185,6 +186,23 @@ $(document).ready(function () {
     return false;
   });
 });
+
+function openLab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  $('.tabcontent').hide();
+  $('.tabcontent:first-child').fadeIn();
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tab-links");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+}
 
 
 // ========================================================================= //
@@ -314,7 +332,7 @@ function initMap() {
 var buyt = [
   { maxb: 'VN-1', tenxb: 'Limouse-32', from: 'HCM', to: 'Hà Nội', tendoanhnghiep: 'Phương Trang', trangthai: 'Dang hoat dong' },
   { maxb: 'VN-2', tenxb: 'Limouse-31', from: 'HCM', to: 'Nha Trang', tendoanhnghiep: 'Phương Trang', trangthai: 'Khong hoat dong' }
-  
+
 ];
 
 render(false);
@@ -348,8 +366,8 @@ function addItem() {
 
 function render(isRemove) {
   const buytStore = JSON.parse(sessionStorage.getItem('buyt')) ?? buyt;
-  renderTr(buytStore,isRemove);
-  
+  renderTr(buytStore, isRemove);
+
 }
 
 function renderTr(buytStore, isRemove) {
@@ -384,7 +402,7 @@ findBtn.addEventListener("click", findItems);
 function findItems() {
   const buytStore = JSON.parse(sessionStorage.getItem('buyt')) ?? buyt;
   let nameOfBusInput = document.getElementById('nameOfBus');
-  const filterData = buytStore.filter(el  => el.tenxb.includes(nameOfBusInput.value))
+  const filterData = buytStore.filter(el => el.tenxb.includes(nameOfBusInput.value))
   renderTr(filterData, true);
 }
 
@@ -394,12 +412,12 @@ function findItems() {
 // var deleteBtn = document.querySelector('.btn-delete');
 // deleteBtn.addEventListener("click", deleteItem);
 
-function deleteItem(index){
+function deleteItem(index) {
   const buytStore = JSON.parse(sessionStorage.getItem('buyt')) ?? buyt;
-  const filterData = buytStore.filter((_el, _index)  => _index != index)
+  const filterData = buytStore.filter((_el, _index) => _index != index)
   sessionStorage.removeItem('buyt', JSON.stringify(filterData));
   sessionStorage.setItem('buyt', JSON.stringify(filterData));
-  
+
   renderTr(filterData, true);
 }
 
