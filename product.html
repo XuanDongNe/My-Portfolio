@@ -14,80 +14,30 @@
 </head>
 
 <body>
-
-    <!-- <div class="filler">
-        <h3 class="mb15_991"><i class="fa-regular fa-filter"></i> Bộ lọc</h3>
-        <div class="row row-10">
-            <div class="col-lg-4 mb15_991 padding-10">
-                <div class="SumoSelect sumo_hang" tabindex="0" role="button" aria-expanded="false"><select
-                        class="multiselect hang w100 SumoUnder" name="hang" id="hang" multiple="" tabindex="-1">
-                        <option value="12">Bó hoa </option>
-                        <option value="13">Giỏ hoa </option>
-                        <option value="14">Hộp hoa </option>
-                        <option value="15">Gift box &amp; Christmas Gifts</option>
-                        <option value="16">Kệ chúc mừng </option>
-                        <option value="17">Kệ chia buồn </option>
-                        <option value="18">Lan hồ diệp</option>
-                        <option value="19">Hoa cưới </option>
-                    </select>
-                    <p class="CaptionCont SelectBox search" title="Chọn mẫu hoa"><span class="placeholder">Chọn mẫu
-                            hoa</span><label><i></i></label><input type="text" class="search-txt" value=""
-                            placeholder="Tìm kiếm"></p>
-                    <div class="optWrapper selall multiple">
-                        <p class="select-all"><span><i></i></span><label>Chọn hết</label></p>
-                        <ul class="options">
-                            <li class="opt"><span><i></i></span><label>Bó hoa </label></li>
-                            <li class="opt"><span><i></i></span><label>Giỏ hoa </label></li>
-                            <li class="opt"><span><i></i></span><label>Hộp hoa </label></li>
-                            <li class="opt"><span><i></i></span><label>Gift box &amp; Christmas Gifts</label></li>
-                            <li class="opt"><span><i></i></span><label>Kệ chúc mừng </label></li>
-                            <li class="opt"><span><i></i></span><label>Kệ chia buồn </label></li>
-                            <li class="opt"><span><i></i></span><label>Lan hồ diệp</label></li>
-                            <li class="opt"><span><i></i></span><label>Hoa cưới </label></li>
-                        </ul>
-                        <p class="no-match"></p>
-                        <div class="MultiControls">
-                            <p tabindex="0" class="btnOk">OK</p>
-                            <p tabindex="0" class="btnCancel">Hủy</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 padding-10">
-                <div class="SumoSelect sumo_mucgia" tabindex="0" role="button" aria-expanded="false"><select
-                        class="multiselect w100 SumoUnder" name="mucgia" id="mucgia" multiple="" tabindex="-1">
-                        <option value="6">Dưới 500.000đ</option>
-                        <option value="5">500.000đ - 1.000.000đ</option>
-                        <option value="7">1.000.000đ - 2.000.000đ</option>
-                        <option value="8">Trên 2.000.000</option>
-                    </select>
-                    <p class="CaptionCont SelectBox search" title="Chọn mức giá"><span class="placeholder">Chọn mức
-                            giá</span><label><i></i></label><input type="text" class="search-txt" value=""
-                            placeholder="Tìm kiếm"></p>
-                    <div class="optWrapper selall multiple">
-                        <p class="select-all"><span><i></i></span><label>Chọn hết</label></p>
-                        <ul class="options">
-                            <li class="opt"><span><i></i></span><label>Dưới 500.000đ</label></li>
-                            <li class="opt"><span><i></i></span><label>500.000đ - 1.000.000đ</label></li>
-                            <li class="opt"><span><i></i></span><label>1.000.000đ - 2.000.000đ</label></li>
-                            <li class="opt"><span><i></i></span><label>Trên 2.000.000</label></li>
-                        </ul>
-                        <p class="no-match"></p>
-                        <div class="MultiControls">
-                            <p tabindex="0" class="btnOk">OK</p>
-                            <p tabindex="0" class="btnCancel">Hủy</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <h1 class="heading"> Latest <span>Products</span></h1>
+  
+    <div class="wrapper">
+        <div class="select-btn">
+            <span>Select Flower</span>
+            <i class="ti-arrow-down"></i>
         </div>
-    </div> -->
+        <div class="content-wrapper">
+            <div class="search">
+                <i class="ti-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <ul class="options">
+                <li>Bó hoa</li> 
+                <li>Giỏ hoa</li> 
+                <li>Hộp hoa</li> 
+                <li>Kệ chúc mừng</li> 
+                <li>Gift box</li> 
+            </ul>
 
+        </div>
+    </div>
     <section class="products" id="products">
-        <h1 class="heading"> Latest <span>Products</span></h1>
-
         <div class="box-container">
-
             <div class="box">
                 <span class="discount">-10%</span>
                 <div class="image">
@@ -298,5 +248,13 @@
     <!-- End footer -->
 
 </body>
+<script>
+    const wrapper = document.querySelector('.wrapper'),
+    selectBtn =  document.querySelector('.select-btn');
+
+    selectBtn.addEventListener("click",() => {
+        wrapper.classList.toggle("active");
+    })
+</script>
 
 </html>

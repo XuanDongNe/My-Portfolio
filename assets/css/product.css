@@ -9,70 +9,8 @@ html {
     overflow-x: hidden;
 }
 
-/*  */
-.filler {
-    padding: 15px;
-    border: 1px solid rgba(0, 122, 106, 0.2);
-    border-radius: 7px;
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.filler h3 {
-    font-family: "SourceSans3-SemiBold";
-    font-size: 20px;
-    color: black;
-    padding-right: 20px;
-    margin-right: 20px;
-    border-right: 1px solid rgba(204, 204, 204, 0.5);
-    flex-shrink: 0;
-}
 
-.filler .row {
-    flex-grow: 1;
-}
-
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.filler .SumoSelect {
-    width: 100%;
-}
-.SumoSelect {
-    display: inline-block;
-    position: relative;
-    outline: none;
-}
-.SumoSelect {
-    width: 200px;
-}
-
-.SumoUnder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    border: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    filter: alpha(opacity=0);
-    -moz-opacity: 0;
-    -khtml-opacity: 0;
-    opacity: 0;
-}
-/*  */
 
 .heading {
     text-align: center;
@@ -81,7 +19,7 @@ html {
     padding: 1rem;
     margin: 2rem 0;
     background-color: rgba(255, 51, 153, .05);
-   
+
 
 }
 
@@ -90,12 +28,94 @@ html {
 }
 
 
+/* wrapper */
+.wrapper {
+    width: 370px;
+    margin: 23px auto 0px;
+}
+
+.select-btn, .options li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select-btn {
+    height: 45px;
+    font-size: 2em;
+    padding: 0 20px;
+    outline: #b3b3b3;
+    border-radius: 7px;
+    background: rgb(239, 233, 233,0.5) ;
+    justify-content: space-between;
+}
+
+.select-btn i {
+    font-size: 20px;
+    transition: .4s;
+}
+
+.content-wrapper {
+    display: none;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 7px;
+    background: rgb(239, 233, 233,0.5) ;
+}
+
+.wrapper.active  .select-btn i {
+    transform: rotate(180deg);
+    transition: .4s;
+}
+.wrapper.active .content-wrapper {
+    display: block;
+}
+
+.content-wrapper .search {
+    position: relative;
+}
+
+.search i {
+    left: 15px;
+    font-size: 20px;
+    line-height: 49px;
+    position: absolute;
+    opacity: .7;
+}
+
+.search input {
+    height: 45px;
+    width: 80%;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 0px 15px 0 43px ;
+    border: 1px solid #b3b3b3;
+}
+
+.content-wrapper .options {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.options li {
+    height: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.options li:hover {
+    background-color:#fff;
+}
 
 
+
+/* product */
 .products .box-container {
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
 .products .box-container .box {
@@ -130,7 +150,7 @@ html {
 }
 
 .products .box-container .box:hover .image img {
-   transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .products .box-container .box .image .icons {
@@ -150,10 +170,11 @@ html {
     line-height: 5rem;
     font-size: 2rem;
     width: 50%;
-    background-color:var(--pink);
+    background-color: var(--pink);
     color: #fff;
     text-decoration: none;
 }
+
 .products .box-container .box .image .icons .cart-btn {
     border-radius: .1rem solid #fff7;
     border-right: .1rem solid #fff7;
@@ -165,17 +186,17 @@ html {
 }
 
 .products .box-container .box .content {
- padding: 2rem;
+    padding: 2rem;
     text-align: center;
 }
 
 .products .box-container .box .content h3 {
-  margin: 20px 0px 10px 0px;
+    margin: 20px 0px 10px 0px;
     font-size: 2.5rem;
     color: #333;
 }
 
-.products .box-container .box:hover .content h3{
+.products .box-container .box:hover .content h3 {
     bottom: 2rem;
 }
 
@@ -185,11 +206,12 @@ html {
     font-weight: bolder;
     padding-top: 1rem;
 }
-.products .box-container .box .content .price span{
+
+.products .box-container .box .content .price span {
     font-size: 1.5rem;
     color: var(--pink);
     font-weight: lighter;
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 /* footer */
@@ -199,7 +221,7 @@ html {
     text-align: center;
     background: #000;
 
-    
+
 }
 
 #footer .socials-list {
