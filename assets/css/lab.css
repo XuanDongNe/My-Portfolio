@@ -1565,6 +1565,46 @@ p {
     font-weight: bold;
 }
 
+.tab-excercise-child {
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.tab-excercise-child button {
+    float: center;
+    border: 0.1px solid #00bfff;
+    outline: 0.1px solid #000000;
+    cursor: pointer;
+    padding: 10px 12px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.tab-excercise-child button:hover {
+    background: #00bfff;
+    cursor: pointer;
+}
+
+.tab-excercise-child button:hover a {
+    color: #000000;
+}
+
+.tab-excercise-child button a {
+    text-decoration: none;
+    /* color: #00bfff; */
+    font-weight: bold;
+}
+
+
 .tabcontent {
     text-align: center;
     display: none;
@@ -1814,6 +1854,15 @@ user agent stylesheet th {
 .tab-links.active {
     background-color: #00bfff;
 }
+
+.tab-links-child.active {
+    background-color: #00bfff;
+}
+
+.tab-links-child.active a {
+    color: #000;
+}
+
 
 .tab-links.active a {
     color: #000;
