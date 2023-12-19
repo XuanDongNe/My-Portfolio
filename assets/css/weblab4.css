@@ -24,7 +24,7 @@
 #header {
     position: -webkit-sticky;
     top: -40px; /* hoặc bất kỳ giá trị top bạn muốn */
-    background-color: #fff; /* hoặc màu nền bạn muốn */
+    background-color: rgb(219, 211, 211); /* hoặc màu nền bạn muốn */
     z-index: 1000; /* giá trị z-index để đảm bảo header trên cùng */
     width: 100%;
     padding:0px 30px;
