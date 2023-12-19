@@ -1863,6 +1863,14 @@ user agent stylesheet th {
     color: #000;
 }
 
+.tab-links-child2.active {
+    background-color: #00bfff;
+}
+
+.tab-links-child2.active a {
+    color: #000;
+}
+
 
 .tab-links.active a {
     color: #000;

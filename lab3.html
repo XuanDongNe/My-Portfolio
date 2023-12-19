@@ -200,21 +200,112 @@
                         </div>
                     </div>
 
-
-
-
-
-
-
-                    <div id="Z-Pattern" class="tabcontent" style="display: block;">
-                        <iframe src="product.html" frameborder="0" style=" height: 450px; width: 80%;"></iframe>
-                        <p class="m-0" style="margin: 30px;">
-                            <a href="product.html" class="btn btn-secondary mt-1 py-3 px-5"
-                                style="margin: 50px 0px 10px 0px;padding: 19px 25px;" target="_blank">Review Page</a>
-                        </p>
-                    </div>
-
+                    <script>
+                        function openLab_Child(evt, cityName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent-child");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tab-links-child");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+        
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                        
+                    </script>
                 </div>
+               
+                <div id="Z-Pattern" class="tabcontent" style="display: block;">
+                    <div class="pc-tab">
+                        <div class="tab-excercise-child">
+                            <button class="tab-links-child2 active" onclick="openLab_Child2(event, 'Design-child2')"
+                                id="defaultOpen">Design</button>
+                            <button class="tab-links-child2"
+                                onclick="openLab_Child2(event, 'Implement-child2')">Implement</button>
+                        </div>
+                        <div class="text-content" id="Text-content">
+                            <div id="Design-child2" class="tabcontent-child2" style="display: block;">
+                                <div class="container-fluid pt-5">
+                                    <div class="container-tab pb-3">
+                                        <div class="row2">
+                                            <div class="col-lg-6 pb-1">
+                                                <div class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                                                    style="width: 500px; height: 625px; margin-left: 220px;">
+                                                    <div class="pl-4">
+                                                        <h4>Design on Paper</h4>
+                                                        <p class="m-0">
+                                                            <img src="./assets/images/lab5.jpg" alt=""
+                                                                style="width:450px;height: 500px;margin-bottom: 12px; ">
+                                                            <a href="./assets/images/lab5.jpg" download=""
+                                                                class="btn btn-secondary mt-1 py-3 px-5  download-btn"
+                                                                style="margin-bottom: 10px;">Download</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 pb-1">
+                                                <div class="d-flex bg-light shadow-sm border-top rounded mb-4"
+                                                    style="width: 500px; height: 625px;">
+                                                    <div class="pl-4">
+                                                        <h4>Design on Figma</h4>
+                                                        <p class="m-0">
+                                                            <img src="./assets/images/Desktop - 1.png" alt=""
+                                                                style="width:450px;height:500px; margin-bottom: 12px;">
+                                                            <a href="./assets/images/Desktop - 1.png" download=""
+                                                                class="btn btn-secondary mt-1 py-3 px-5"
+                                                                style="margin-bottom: 10px; margin-right: 5px;">Download</a>
+                                                            <a href="https://www.figma.com/file/y81j187HxT5Qq90H4diZ1p/Vo-Xuan-Dong---22130043?type=design&node-id=46-2&mode=design&t=mtyTELCUXTsot6iN-0 "
+                                                                target="_blank" class="btn btn-secondary mt-1 py-3 px-5"
+                                                                style="margin-bottom: 10px;">Figma</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="Implement-child2" class="tabcontent-child2" style="display: block;">
+                                <iframe src="Z-Pattern.html" frameborder="0"
+                                    style="width: 80%;  height:450px; margin-top: 10px;"></iframe>
+
+                                <p class="m-0" style="margin: 30px;">
+                                    <a href="Z-Pattern.html" class="btn btn-secondary mt-1 py-3 px-5"
+                                        style="margin: 50px 0px 10px 0px;padding: 19px 25px;" target="_blank">Review
+                                        Page</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function openLab_Child2(evt, cityName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent-child2");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tab-links-child2");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+                    
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                        
+                    </script>
+                </div>
+             
+                
 
             </div>
             <!-- End my lab -->
@@ -234,26 +325,10 @@
 
 
 
-            <script>
+           
 
-                function openLab_Child(evt, cityName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent-child");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tab-links-child");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display = "block";
-                    evt.currentTarget.className += " active";
-                }
 
-                // Get the element with id="defaultOpen" and click on it
-                document.getElementById("defaultOpen").click();
-                s
-            </script>
+
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
